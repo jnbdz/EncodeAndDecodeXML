@@ -35,8 +35,7 @@ String.implement({
             '&quot;': '"',
             '&lt;': '<',
             '&gt;': '>'
-        };
-        
+        };        
         return String(this).replace(/(&quot;|&lt;|&gt;|&amp;)/g, function(str, item) {
             return escaped_to_xml[item];
         });
